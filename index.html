@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Code Adventure: The AURA Protocol</title>
+</head>
+<body>
+    <div id="layar-awal">
+        <h1>Code Adventure: The AURA Protocol</h1>
+        <p>Masukkan nama Kodeks Anda untuk memulai misi.</p>
+        <input type="text" id="input-nama" placeholder="Nama Kodeks..." maxlength="20">
+        <button id="tombol-mulai">Mulai Sinkronisasi</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <div id="info-bar">
+            <span>Kodeks: <b id="nama-pemain-display"></b></span>
+            <span>Skor Total: <b id="skor-total-display">0</b></span>
+        </div>
+        <div id="game-output"></div>
+        <div id="puzzle-info">
+            <p>Skor Puzzle Ini: <b id="skor-puzzle-ini-display">1500</b> | Waktu: <b id="waktu-display">0s</b></p>
+        </div>
+        <form id="command-form">
+            <span class="prompt-symbol">></span>
+            <input type="text" id="command-input" placeholder="Ketik solusi Python di sini..." autocomplete="off">
+        </form>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="music/background.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="game-container" style="display: none;">
+        <div id="info-bar">
+            </div>
+
+        <div id="main-game-area">
+            <div id="character-portrait">
+                <img id="character-image" src="img/gb_aura.png" alt="Karakter">
+            </div>
+            <div id="game-output"></div>
+        </div>
+
+        <div id="puzzle-info">
+            </div>
+        <form id="command-form">
+            </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
